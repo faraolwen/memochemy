@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "拡張機能界のアルケミー",
+    "version": "1.0",
+    "description": "選択した単語をメモとして保存する拡張機能",
+    "permissions": ["storage", "contextMenus", "tabs"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {},
+    "web_accessible_resources": [
+      {
+        "resources": ["memo.html", "memo.js"],
+        "matches": ["<all_urls>"],
+        "use_dynamic_url": false
+      }
+    ]
+  }
+  
